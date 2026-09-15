@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question for You</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Background Hearts -->
+    <div class="heart-bg"></div>
+
+    <main class="card">
+        <!-- Step 1: Introduction -->
+        <section id="step1" class="step active">
+            <h1 class="script-font">Hey there...</h1>
+            <p>I put together a little page just for you because there's something special I've been wanting to ask.</p>
+            <button class="btn" onclick="nextStep(2)">Continue ✨</button>
+        </section>
+
+        <!-- Step 2: Reasons / Memories -->
+        <section id="step2" class="step">
+            <h2>A Few Things I Love About You...</h2>
+            <div class="reasons">
+                <div class="reason-card">
+                    <span class="icon">😊</span>
+                    <p>Your smile always brightens up my entire day, no matter what kind of week I'm having.</p>
+                </div>
+                <div class="reason-card">
+                    <span class="icon">💬</span>
+                    <p>Every conversation with you feels effortless, fun, and something I always look forward to.</p>
+                </div>
+                <div class="reason-card">
+                    <span class="icon">✨</span>
+                    <p>You're uniquely kind, thoughtful, and incredible just being yourself.</p>
+                </div>
+            </div>
+            <button class="btn" onclick="nextStep(3)">One last thing... ❤️</button>
+        </section>
+
+        <!-- Step 3: The Big Question -->
+        <section id="step3" class="step">
+            <h1 class="script-font">So, I wanted to ask...</h1>
+            <h2 class="question">Will you be my girlfriend?</h2>
+            
+            <div class="buttons-container">
+                <button id="yesBtn" class="btn yes-btn" onclick="celebrate()">Yes! 💖</button>
+                <button id="noBtn" class="btn no-btn" onmouseover="moveNoButton()" onclick="moveNoButton()">No 😜</button>
+            </div>
+        </section>
+
+        <!-- Step 4: Celebration Screen -->
+        <section id="step4" class="step">
+            <h1 class="script-font">Yay! 🎉</h1>
+            <h2>You just made my day!</h2>
+            <p>I can't wait to make so many more amazing memories together.</p>
+            <div class="celebration-emoji">🥰❤️✨</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
